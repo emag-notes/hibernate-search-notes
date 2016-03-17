@@ -23,7 +23,7 @@ public class GettingStartedTest {
 
     em.getTransaction().begin();
     Book book1 = new Book();
-    book1.setTitle("Hoge");
+    book1.setTitle("Java");
     em.persist(book1);
     em.getTransaction().commit();
 
