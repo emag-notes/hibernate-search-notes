@@ -41,6 +41,7 @@ public class GettingStartedTest {
 
     javax.persistence.Query jpaQuery = fullTextEntityManager.createFullTextQuery(luceneQuery, Book.class);
 
+    @SuppressWarnings("unchecked")
     List<Book> result = jpaQuery.getResultList();
     assertThat(result.size(), is(1));
 
