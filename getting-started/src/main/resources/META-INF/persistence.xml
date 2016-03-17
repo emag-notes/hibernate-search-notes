@@ -6,9 +6,6 @@
 
   <persistence-unit name="primary" transaction-type="RESOURCE_LOCAL">
 
-    <class>hibernate.search.notes.getting_started.Book</class>
-    <class>hibernate.search.notes.getting_started.Author</class>
-
     <properties>
       <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:hibernate-search-getting-started;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1"/>
